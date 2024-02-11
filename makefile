@@ -5,11 +5,12 @@ INCLUDE := ./include
 SRC := ./src
 BIN := ./bin
 
-compile: $(BIN)/*.o
+compile: *.o
 	$(CC) $^ -o a.out
+	mv *.o $(BIN)
 
-$(BIN)/%.o: $(SRC)/%.cpp
-	$(CC) $(CFLAGS) -I$(INCLUDE) -c -o $@ $<
+%.o: $(SRC)/%.cpp
+	$(CC) $(CFLAGS) -I$(INCLUDE) -c $^
 
 run: compile
 	./a.out

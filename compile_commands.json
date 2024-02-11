@@ -1,0 +1,17 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-g",
+      "-Wall",
+      "-I./include",
+      "-c",
+      "-o",
+      "bin/*.o",
+      "src/io.cpp"
+    ],
+    "directory": "/home/chiara/notes/informatica/internet",
+    "file": "/home/chiara/notes/informatica/internet/src/io.cpp",
+    "output": "/home/chiara/notes/informatica/internet/bin/*.o"
+  }
+]
